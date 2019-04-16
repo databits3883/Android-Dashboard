@@ -39,11 +39,6 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    // Go Full screen
-    View decorView = getWindow().getDecorView();
-    int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
-    decorView.setSystemUiVisibility(uiOptions);
-
     Button qr_button = findViewById(R.id.qr_button);
     qr_button.setOnClickListener(view -> {scanner();});
 
@@ -51,6 +46,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
 
     chart1();
     chart2();
+  }
+
+  @Override
+  public void onResume() {
+    super.onResume();
+    // Go Full screen
+    View decorView = getWindow().getDecorView();
+    int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+    decorView.setSystemUiVisibility(uiOptions);
   }
 
   private void scanner(){
