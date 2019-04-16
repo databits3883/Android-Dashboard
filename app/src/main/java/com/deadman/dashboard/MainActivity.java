@@ -1,8 +1,10 @@
 package com.deadman.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
@@ -13,6 +15,7 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.pedro.library.AutoPermissions;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements OnChartValueSelectedListener {
@@ -41,8 +44,18 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
     decorView.setSystemUiVisibility(uiOptions);
 
+    Button qr_button = findViewById(R.id.qr_button);
+    qr_button.setOnClickListener(view -> {scanner();});
+
+    AutoPermissions.Companion.loadAllPermissions(this, 1);
+
     chart1();
     chart2();
+  }
+
+  private void scanner(){
+    Intent intent = new Intent(this, Scanner.class);
+    startActivity(intent);
   }
 
   private void chart1(){
