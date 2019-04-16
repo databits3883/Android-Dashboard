@@ -162,10 +162,10 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team1_hab_start_avg"
+        android:id="@+id/team1_defense_avg"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -195,7 +195,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -205,7 +205,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -215,7 +215,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -265,7 +265,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -275,7 +275,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -285,7 +285,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -331,7 +331,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -341,7 +341,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -351,7 +351,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -382,10 +382,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team2_hab_start_avg"
+        android:id="@+id/team2_defense_avg"
+        android:layout_height="match_parent"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -415,7 +416,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -425,7 +426,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -435,7 +436,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -485,7 +486,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -495,7 +496,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -505,7 +506,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -551,7 +552,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -561,7 +562,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -571,7 +572,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -605,10 +606,10 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team3_hab_start_avg"
+        android:id="@+id/team3_defense_avg"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -638,7 +639,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -648,7 +649,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -658,7 +659,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -708,7 +709,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -718,7 +719,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -728,7 +729,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -774,7 +775,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -784,7 +785,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -794,7 +795,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -824,10 +825,10 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team4_hab_start_avg"
+        android:id="@+id/team4_defense_avg"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -857,7 +858,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -867,7 +868,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -877,7 +878,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -932,7 +933,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -942,7 +943,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -952,7 +953,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -993,7 +994,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1003,7 +1004,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1013,7 +1014,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1044,10 +1045,10 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team5_hab_start_avg"
+        android:id="@+id/team5_defense_avg"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1077,7 +1078,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1087,7 +1088,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1097,7 +1098,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1147,7 +1148,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1157,7 +1158,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1167,7 +1168,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1213,7 +1214,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1223,7 +1224,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1233,7 +1234,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1267,10 +1268,10 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <TextView
-        android:id="@+id/team6_hab_start_avg"
+        android:id="@+id/team6_defense_avg"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/launch_avg"
+        android:text="@string/defense_avg"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1300,7 +1301,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1310,7 +1311,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="7"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1320,7 +1321,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1370,7 +1371,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1380,7 +1381,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="1.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1390,7 +1391,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1436,7 +1437,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="2.3"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1446,7 +1447,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="4.8"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
@@ -1456,7 +1457,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:text="5"
+        android:text="@string/zero"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="21sp"/>
