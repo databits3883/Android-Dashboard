@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     setContentView(R.layout.activity_main);
 
     Button qr_button = findViewById(R.id.qr_button);
-    qr_button.setOnClickListener(view -> {scanner();});
+    qr_button.setOnClickListener(view -> scanner());
 
     AutoPermissions.Companion.loadAllPermissions(this, 1);
 
