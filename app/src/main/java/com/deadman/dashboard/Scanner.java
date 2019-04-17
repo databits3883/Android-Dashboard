@@ -3,13 +3,21 @@ package com.deadman.dashboard;
 import android.app.Activity;
 import android.media.MediaScannerConnection;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import com.google.zxing.Result;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 public class Scanner extends Activity implements ZXingScannerView.ResultHandler {
+
+  File qr_string = new File(
+      Environment.getExternalStorageDirectory() + File.separator + "FRC" + File.separator + "qr_string.txt");
 
   private ZXingScannerView mScannerView;
 
@@ -43,7 +51,18 @@ public class Scanner extends Activity implements ZXingScannerView.ResultHandler 
   public void handleResult(Result rawResult) {
 
     String results = rawResult.getText();
-    Toast.makeText(this,results,Toast.LENGTH_SHORT).show();
+    //Toast.makeText(this,results,Toast.LENGTH_SHORT).show();
+
+    try {
+      FileOutputStream stream = new FileOutputStream(qr_string);
+      stream.write(results.getBytes());
+      stream.close();
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    rescan(qr_string.getAbsolutePath());
 
     this.onBackPressed();
   }

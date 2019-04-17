@@ -145,7 +145,7 @@
     app:layout_constraintGuide_percent="0.90"/>
   <TableLayout
     android:id="@+id/team1_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginBottom="32dp"
     android:layout_marginStart="8dp"
@@ -190,7 +190,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team1_hab_start_avg_data"
+        android:id="@+id/team1_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
@@ -364,7 +364,7 @@
   </TableLayout>
   <TableLayout
     android:id="@+id/team2_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
@@ -411,7 +411,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team2_hab_start_avg_data"
+        android:id="@+id/team2_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
@@ -586,7 +586,7 @@
 
   <TableLayout
     android:id="@+id/team3_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
@@ -634,7 +634,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team3_hab_start_avg_data"
+        android:id="@+id/team3_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
@@ -808,7 +808,7 @@
   </TableLayout>
   <TableLayout
     android:id="@+id/team4_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginBottom="32dp"
     android:layout_marginStart="8dp"
@@ -853,7 +853,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team4_hab_start_avg_data"
+        android:id="@+id/team4_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
@@ -1027,7 +1027,7 @@
   </TableLayout>
   <TableLayout
     android:id="@+id/team5_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
@@ -1073,7 +1073,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team5_hab_start_avg_data"
+        android:id="@+id/team5_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
@@ -1248,7 +1248,7 @@
 
   <TableLayout
     android:id="@+id/team6_table"
-    android:layout_width="346dp"
+    android:layout_width="350dp"
     android:layout_height="221dp"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
@@ -1296,7 +1296,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <TextView
-        android:id="@+id/team6_hab_start_avg_data"
+        android:id="@+id/team6_defense_avg_data"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="2dp"
