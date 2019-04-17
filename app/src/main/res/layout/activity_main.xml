@@ -1502,6 +1502,7 @@
     android:textStyle="bold"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:text="@string/Team3"
@@ -1619,6 +1620,20 @@
     android:textSize="24sp"
     app:layout_constraintEnd_toStartOf="@+id/guideline6"
     app:layout_constraintStart_toStartOf="@+id/guideline4"
+    app:layout_constraintTop_toTopOf="@+id/guideline13"/>
+  <TextView
+    android:id="@+id/selected_number"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline15"
+    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+    app:layout_constraintStart_toStartOf="@+id/guideline6"
     app:layout_constraintTop_toTopOf="@+id/guideline13"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

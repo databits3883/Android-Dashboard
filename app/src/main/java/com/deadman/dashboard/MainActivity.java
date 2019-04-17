@@ -266,12 +266,13 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     chart.getXAxis().setDrawGridLines(false);
     chart.getXAxis().setDrawLabels(false);
     chart.getAxisRight().setDrawLabels(false);
-    chart.setTouchEnabled(false);
-    chart.setDragEnabled(false);
+    chart.setTouchEnabled(true);
+    chart.setDragEnabled(true);
     chart.setScaleEnabled(false);
     chart.setPinchZoom(false);
     Legend legend = chart.getLegend();
     legend.setEnabled(false);
+    chart.setOnChartValueSelectedListener(this);
   }
 
   private void chart1(){
@@ -336,7 +337,8 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
 
   @Override
   public void onValueSelected(Entry e, Highlight h) {
-
+    TextView selected_number = findViewById(R.id.selected_number);
+    selected_number.setText(String.valueOf(h.getY()));
   }
 
   @Override
