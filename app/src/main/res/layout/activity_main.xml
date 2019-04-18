@@ -1657,6 +1657,7 @@
       android:textSize="24sp"
       app:layout_constraintBaseline_toBaselineOf="@+id/blue"
       app:layout_constraintEnd_toStartOf="@+id/guideline6"
+      app:layout_constraintHorizontal_bias="0.363"
       app:layout_constraintStart_toEndOf="@+id/blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,15 +3,11 @@ package com.deadman.dashboard;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
@@ -22,11 +18,15 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.pedro.library.AutoPermissions;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements OnChartValueSelectedListener {
 
@@ -96,9 +96,9 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       }
 
       qr_info = new String(bytes);
-      String testing = Integer.toString(qr_info.split(";").length);
-    Toast.makeText(this,testing,Toast.LENGTH_LONG).show();
-    if(qr_info.split(";").length != 127){
+//    String testing = Integer.toString(qr_info.split(";").length);
+//    Toast.makeText(this,testing,Toast.LENGTH_LONG).show();
+    if (qr_info.split(";").length != 133) {
       qr_string.delete();
       if (isFirstTime()) {
         new AlertDialog.Builder(this)
@@ -138,14 +138,19 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     TextView score_blue = findViewById(R.id.blue_score);
     TextView score_red = findViewById(R.id.red_score);
     String teams[] = getdata().split(":");
-    String category1[] = teams[0].split(";");
-    String category2[] = teams[1].split(";");
-    String category3[] = teams[2].split(";");
-    String category4[] = teams[3].split(";");
-    String category5[] = teams[4].split(";");
-    String category6[] = teams[5].split(";");
-    score_red.setText(Integer.parseInt(category1[4]) + Integer.parseInt(category2[4]) + Integer.parseInt(category3[4]));
-    score_blue.setText(Integer.parseInt(category4[4]) + Integer.parseInt(category5[4]) + Integer.parseInt(category6[4]));
+    if (qr_string.exists()) {
+      String category1[] = teams[0].split(";");
+      String category2[] = teams[1].split(";");
+      String category3[] = teams[2].split(";");
+      String category4[] = teams[3].split(";");
+      String category5[] = teams[4].split(";");
+      String category6[] = teams[5].split(";");
+      Float red_float = (Float.parseFloat(category1[3]) + Float.parseFloat(category2[3]) + Float.parseFloat(category3[3]));
+      Float blue_float = (Float.parseFloat(category4[3]) + Float.parseFloat(category5[3]) + Float.parseFloat(category6[3]));
+
+      score_red.setText(Float.toString(Float.parseFloat(String.format("%.02f", red_float))));
+      score_blue.setText(Float.toString(Float.parseFloat(String.format("%.02f", blue_float))));
+    }
   }
 
   private void team1(){
@@ -350,7 +355,7 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       String teams[] = getdata().split(":");
       if (qr_string.exists()) {
         String category[] = teams[z].split(";");
-        String[] graph_data = category[6].split("-");
+        String[] graph_data = category[7].split("-");
 
         for (int i = 0; i < graph_data.length; i++) {
           String datapoint = graph_data[i];
@@ -382,7 +387,7 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       String teams[] = getdata().split(":");
       if (qr_string.exists()) {
         String category[] = teams[z].split(";");
-        String[] graph_data = category[6].split("-");
+        String[] graph_data = category[7].split("-");
 
         for (int i = 0; i < graph_data.length; i++) {
           String datapoint = graph_data[i];
