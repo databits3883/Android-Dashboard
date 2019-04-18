@@ -5,6 +5,7 @@ import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import com.google.zxing.Result;
@@ -38,6 +39,11 @@ public class Scanner extends Activity implements ZXingScannerView.ResultHandler 
     super.onResume();
     mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
     mScannerView.startCamera();          // Start camera on resume
+
+    // Go Full screen
+    View decorView = getWindow().getDecorView();
+    int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+    decorView.setSystemUiVisibility(uiOptions);
   }
 
   @Override
@@ -49,10 +55,8 @@ public class Scanner extends Activity implements ZXingScannerView.ResultHandler 
   // Function to create the stats.csv from the data gotten from the QR Code
   @Override
   public void handleResult(Result rawResult) {
-
-    String results = rawResult.getText();
-    //Toast.makeText(this,results,Toast.LENGTH_SHORT).show();
-
+    String results;
+    results = rawResult.getText();
     try {
       FileOutputStream stream = new FileOutputStream(qr_string);
       stream.write(results.getBytes());
