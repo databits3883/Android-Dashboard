@@ -1,16 +1,15 @@
 package com.deadman.dashboard;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.mikephil.charting.charts.LineChart;
@@ -76,11 +75,12 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       team6();
       chart1();
       chart2();
+      score();
     }
   }
 
   private String getdata(){
-    String qr_info = "";
+    String qr_info;
       int length = (int) qr_string.length();
       byte[] bytes = new byte[length];
 
@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       }
 
       qr_info = new String(bytes);
+      String testing = Integer.toString(qr_info.split(";").length);
+    Toast.makeText(this,testing,Toast.LENGTH_LONG).show();
     if(qr_info.split(";").length != 127){
       qr_string.delete();
       if (isFirstTime()) {
@@ -132,6 +134,20 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     editor.apply();
   }
 
+  private void score() {
+    TextView score_blue = findViewById(R.id.blue_score);
+    TextView score_red = findViewById(R.id.red_score);
+    String teams[] = getdata().split(":");
+    String category1[] = teams[0].split(";");
+    String category2[] = teams[1].split(";");
+    String category3[] = teams[2].split(";");
+    String category4[] = teams[3].split(";");
+    String category5[] = teams[4].split(";");
+    String category6[] = teams[5].split(";");
+    score_red.setText(Integer.parseInt(category1[4]) + Integer.parseInt(category2[4]) + Integer.parseInt(category3[4]));
+    score_blue.setText(Integer.parseInt(category4[4]) + Integer.parseInt(category5[4]) + Integer.parseInt(category6[4]));
+  }
+
   private void team1(){
     TextView team1_title = findViewById(R.id.team1_number);
     TextView team1_defense_avg = findViewById(R.id.team1_defense_avg_data);
@@ -148,15 +164,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[0].split(";");
       team1_title.setText(category[1]);
-      team1_defense_avg.setText(category[20]);
-      team1_cycles_avg.setText(category[4]);
-      team1_cycles_max.setText(category[5]);
-      team1_climb_max.setText(category[15]);
-      team1_hatch_avg.setText(category[11]);
-      team1_hatch_max.setText(category[12]);
-      team1_climb_avg.setText(category[14]);
-      team1_cargo_avg.setText(category[17]);
-      team1_cargo_max.setText(category[18]);
+      team1_defense_avg.setText(category[21]);
+      team1_cycles_avg.setText(category[5]);
+      team1_cycles_max.setText(category[6]);
+      team1_climb_max.setText(category[16]);
+      team1_hatch_avg.setText(category[12]);
+      team1_hatch_max.setText(category[13]);
+      team1_climb_avg.setText(category[15]);
+      team1_cargo_avg.setText(category[18]);
+      team1_cargo_max.setText(category[19]);
     }
   }
 
@@ -176,15 +192,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[1].split(";");
       team2_title.setText(category[1]);
-      team2_defense_avg.setText(category[20]);
-      team2_cycles_avg.setText(category[4]);
-      team2_cycles_max.setText(category[5]);
-      team2_climb_max.setText(category[15]);
-      team2_hatch_avg.setText(category[11]);
-      team2_hatch_max.setText(category[12]);
-      team2_climb_avg.setText(category[14]);
-      team2_cargo_avg.setText(category[17]);
-      team2_cargo_max.setText(category[18]);
+      team2_defense_avg.setText(category[21]);
+      team2_cycles_avg.setText(category[5]);
+      team2_cycles_max.setText(category[6]);
+      team2_climb_max.setText(category[16]);
+      team2_hatch_avg.setText(category[12]);
+      team2_hatch_max.setText(category[13]);
+      team2_climb_avg.setText(category[15]);
+      team2_cargo_avg.setText(category[18]);
+      team2_cargo_max.setText(category[19]);
     }
   }
 
@@ -204,15 +220,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[2].split(";");
       team3_title.setText(category[1]);
-      team3_defense_avg.setText(category[20]);
-      team3_cycles_avg.setText(category[4]);
-      team3_cycles_max.setText(category[5]);
-      team3_climb_max.setText(category[15]);
-      team3_hatch_avg.setText(category[11]);
-      team3_hatch_max.setText(category[12]);
-      team3_climb_avg.setText(category[14]);
-      team3_cargo_avg.setText(category[17]);
-      team3_cargo_max.setText(category[18]);
+      team3_defense_avg.setText(category[21]);
+      team3_cycles_avg.setText(category[5]);
+      team3_cycles_max.setText(category[6]);
+      team3_climb_max.setText(category[16]);
+      team3_hatch_avg.setText(category[12]);
+      team3_hatch_max.setText(category[13]);
+      team3_climb_avg.setText(category[15]);
+      team3_cargo_avg.setText(category[18]);
+      team3_cargo_max.setText(category[19]);
     }
   }
 
@@ -232,15 +248,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[3].split(";");
       team4_title.setText(category[1]);
-      team4_defense_avg.setText(category[20]);
-      team4_cycles_avg.setText(category[4]);
-      team4_cycles_max.setText(category[5]);
-      team4_climb_max.setText(category[15]);
-      team4_hatch_avg.setText(category[11]);
-      team4_hatch_max.setText(category[12]);
-      team4_climb_avg.setText(category[14]);
-      team4_cargo_avg.setText(category[17]);
-      team4_cargo_max.setText(category[18]);
+      team4_defense_avg.setText(category[21]);
+      team4_cycles_avg.setText(category[5]);
+      team4_cycles_max.setText(category[6]);
+      team4_climb_max.setText(category[16]);
+      team4_hatch_avg.setText(category[12]);
+      team4_hatch_max.setText(category[13]);
+      team4_climb_avg.setText(category[15]);
+      team4_cargo_avg.setText(category[18]);
+      team4_cargo_max.setText(category[19]);
     }
   }
 
@@ -260,15 +276,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[4].split(";");
       team5_title.setText(category[1]);
-      team5_defense_avg.setText(category[20]);
-      team5_cycles_avg.setText(category[4]);
-      team5_cycles_max.setText(category[5]);
-      team5_climb_max.setText(category[15]);
-      team5_hatch_avg.setText(category[11]);
-      team5_hatch_max.setText(category[12]);
-      team5_climb_avg.setText(category[14]);
-      team5_cargo_avg.setText(category[17]);
-      team5_cargo_max.setText(category[18]);
+      team5_defense_avg.setText(category[21]);
+      team5_cycles_avg.setText(category[5]);
+      team5_cycles_max.setText(category[6]);
+      team5_climb_max.setText(category[16]);
+      team5_hatch_avg.setText(category[12]);
+      team5_hatch_max.setText(category[13]);
+      team5_climb_avg.setText(category[15]);
+      team5_cargo_avg.setText(category[18]);
+      team5_cargo_max.setText(category[19]);
     }
   }
 
@@ -288,15 +304,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     if (qr_string.exists()) {
       String category[] = teams[5].split(";");
       team6_title.setText(category[1]);
-      team6_defense_avg.setText(category[20]);
-      team6_cycles_avg.setText(category[4]);
-      team6_cycles_max.setText(category[5]);
-      team6_climb_max.setText(category[15]);
-      team6_hatch_avg.setText(category[11]);
-      team6_hatch_max.setText(category[12]);
-      team6_climb_avg.setText(category[14]);
-      team6_cargo_avg.setText(category[17]);
-      team6_cargo_max.setText(category[18]);
+      team6_defense_avg.setText(category[21]);
+      team6_cycles_avg.setText(category[5]);
+      team6_cycles_max.setText(category[6]);
+      team6_climb_max.setText(category[16]);
+      team6_hatch_avg.setText(category[12]);
+      team6_hatch_max.setText(category[13]);
+      team6_climb_avg.setText(category[15]);
+      team6_cargo_avg.setText(category[18]);
+      team6_cargo_max.setText(category[19]);
     }
   }
 

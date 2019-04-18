@@ -1636,4 +1636,27 @@
     app:layout_constraintStart_toStartOf="@+id/guideline6"
     app:layout_constraintTop_toTopOf="@+id/guideline13"/>
 
+  <TextView
+      android:id="@+id/red_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      android:textSize="24sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/red"
+      app:layout_constraintEnd_toStartOf="@+id/guideline6"
+      app:layout_constraintHorizontal_bias="0.363"
+      app:layout_constraintStart_toEndOf="@+id/red" />
+
+  <TextView
+      android:id="@+id/blue_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      android:textSize="24sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/blue"
+      app:layout_constraintEnd_toStartOf="@+id/guideline6"
+      app:layout_constraintStart_toEndOf="@+id/blue" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
