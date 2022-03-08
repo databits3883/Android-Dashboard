@@ -7,6 +7,7 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
@@ -21,7 +22,6 @@ import com.pedro.library.AutoPermissions;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
   private LineChart chart;
 
   private final int[] colors = new int[] {
-      ColorTemplate.MATERIAL_COLORS [0],
+          ColorTemplate.COLORFUL_COLORS [3],
       ColorTemplate.LIBERTY_COLORS  [3],
-      ColorTemplate.MATERIAL_COLORS [2]
+          ColorTemplate.COLORFUL_COLORS [2],
   };
 
   private final int[] colors2 = new int[] {
-      ColorTemplate.PASTEL_COLORS  [3],
-      ColorTemplate.COLORFUL_COLORS [3],
-      ColorTemplate.MATERIAL_COLORS [3]
+          ColorTemplate.COLORFUL_COLORS [3],
+      ColorTemplate.MATERIAL_COLORS [2],
+          ColorTemplate.COLORFUL_COLORS [2],
   };
 
   @Override
@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
       team6();
       chart1();
       chart2();
-      score();
     }
   }
 
@@ -89,16 +88,14 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
         in.read(bytes);
         in.close();
       } catch (
-          FileNotFoundException e) {
-        e.printStackTrace();
-      } catch (IOException e) {
+          IOException e) {
         e.printStackTrace();
       }
 
-      qr_info = new String(bytes);
-//    String testing = Integer.toString(qr_info.split(";").length);
-//    Toast.makeText(this,testing,Toast.LENGTH_LONG).show();
-    if (qr_info.split(";").length != 133) {
+    qr_info = new String(bytes);
+    String testing = Integer.toString(qr_info.split(";").length);
+    Toast.makeText(this,testing,Toast.LENGTH_SHORT).show();
+    if (qr_info.split(";").length != 127) {
       qr_string.delete();
       if (isFirstTime()) {
         new AlertDialog.Builder(this)
@@ -134,190 +131,159 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     editor.apply();
   }
 
-  private void score() {
-    TextView score_blue = findViewById(R.id.blue_score);
-    TextView score_red = findViewById(R.id.red_score);
-    String teams[] = getdata().split(":");
-    if (qr_string.exists()) {
-      String category1[] = teams[0].split(";");
-      String category2[] = teams[1].split(";");
-      String category3[] = teams[2].split(";");
-      String category4[] = teams[3].split(";");
-      String category5[] = teams[4].split(";");
-      String category6[] = teams[5].split(";");
-      Float red_float = (Float.parseFloat(category1[3]) + Float.parseFloat(category2[3]) + Float.parseFloat(category3[3]));
-      Float blue_float = (Float.parseFloat(category4[3]) + Float.parseFloat(category5[3]) + Float.parseFloat(category6[3]));
-
-      score_red.setText(Float.toString(Float.parseFloat(String.format("%.02f", red_float))));
-      score_blue.setText(Float.toString(Float.parseFloat(String.format("%.02f", blue_float))));
-    }
-  }
-
   private void team1(){
     TextView team1_title = findViewById(R.id.team1_number);
     TextView team1_defense_avg = findViewById(R.id.team1_defense_avg_data);
-    TextView team1_cycles_avg = findViewById(R.id.team1_cycles_avg_data);
-    TextView team1_cycles_max = findViewById(R.id.team1_cycles_max_data);
+    TextView team1_tarmac_move = findViewById(R.id.team1_tarmac_move_data);
     TextView team1_climb_max = findViewById(R.id.team1_climb_max_data);
-    TextView team1_hatch_avg = findViewById(R.id.team1_hatch_avg_data);
-    TextView team1_hatch_max = findViewById(R.id.team1_hatch_max_data);
+    TextView team1_auto_max = findViewById(R.id.team1_auto_max_data);
+    TextView team1_tele_max = findViewById(R.id.team1_tele_max_data);
     TextView team1_climb_avg = findViewById(R.id.team1_climb_avg_data);
-    TextView team1_cargo_avg = findViewById(R.id.team1_cargo_avg_data);
-    TextView team1_cargo_max = findViewById(R.id.team1_cargo_max_data);
+    TextView team1_auto_avg = findViewById(R.id.team1_auto_avg_data);
+    TextView team1_tele_avg = findViewById(R.id.team1_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[0].split(";");
+      String[] category = teams[0].split(";");
       team1_title.setText(category[1]);
-      team1_defense_avg.setText(category[21]);
-      team1_cycles_avg.setText(category[5]);
-      team1_cycles_max.setText(category[6]);
-      team1_climb_max.setText(category[16]);
-      team1_hatch_avg.setText(category[12]);
-      team1_hatch_max.setText(category[13]);
-      team1_climb_avg.setText(category[15]);
-      team1_cargo_avg.setText(category[18]);
-      team1_cargo_max.setText(category[19]);
+      team1_defense_avg.setText(category[5]);
+      team1_tarmac_move.setText(category[7]);
+      team1_climb_max.setText(category[9]);
+      team1_auto_max.setText(category[13]);
+      team1_climb_avg.setText(category[10]);
+      team1_tele_max.setText(category[16]);
+      team1_auto_avg.setText(category[12]);
+      team1_tele_avg.setText(category[15]);
     }
   }
 
   private void team2(){
     TextView team2_title = findViewById(R.id.team2_number);
     TextView team2_defense_avg = findViewById(R.id.team2_defense_avg_data);
-    TextView team2_cycles_avg = findViewById(R.id.team2_cycles_avg_data);
-    TextView team2_cycles_max = findViewById(R.id.team2_cycles_max_data);
+    TextView team2_tarmac_move = findViewById(R.id.team2_tarmac_move_data);
     TextView team2_climb_max = findViewById(R.id.team2_climb_max_data);
-    TextView team2_hatch_avg = findViewById(R.id.team2_hatch_avg_data);
-    TextView team2_hatch_max = findViewById(R.id.team2_hatch_max_data);
+    TextView team2_auto_max = findViewById(R.id.team2_auto_max_data);
+    TextView team2_tele_max = findViewById(R.id.team2_tele_max_data);
     TextView team2_climb_avg = findViewById(R.id.team2_climb_avg_data);
-    TextView team2_cargo_avg = findViewById(R.id.team2_cargo_avg_data);
-    TextView team2_cargo_max = findViewById(R.id.team2_cargo_max_data);
+    TextView team2_auto_avg = findViewById(R.id.team2_auto_avg_data);
+    TextView team2_tele_avg = findViewById(R.id.team2_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[1].split(";");
+      String[] category = teams[1].split(";");
       team2_title.setText(category[1]);
-      team2_defense_avg.setText(category[21]);
-      team2_cycles_avg.setText(category[5]);
-      team2_cycles_max.setText(category[6]);
-      team2_climb_max.setText(category[16]);
-      team2_hatch_avg.setText(category[12]);
-      team2_hatch_max.setText(category[13]);
-      team2_climb_avg.setText(category[15]);
-      team2_cargo_avg.setText(category[18]);
-      team2_cargo_max.setText(category[19]);
+      team2_defense_avg.setText(category[5]);
+      team2_tarmac_move.setText(category[7]);
+      team2_climb_max.setText(category[9]);
+      team2_auto_max.setText(category[13]);
+      team2_climb_avg.setText(category[10]);
+      team2_tele_max.setText(category[16]);
+      team2_auto_avg.setText(category[12]);
+      team2_tele_avg.setText(category[15]);
     }
   }
 
   private void team3(){
     TextView team3_title = findViewById(R.id.team3_number);
     TextView team3_defense_avg = findViewById(R.id.team3_defense_avg_data);
-    TextView team3_cycles_avg = findViewById(R.id.team3_cycles_avg_data);
-    TextView team3_cycles_max = findViewById(R.id.team3_cycles_max_data);
+    TextView team3_tarmac_move = findViewById(R.id.team3_tarmac_move_data);
     TextView team3_climb_max = findViewById(R.id.team3_climb_max_data);
-    TextView team3_hatch_avg = findViewById(R.id.team3_hatch_avg_data);
-    TextView team3_hatch_max = findViewById(R.id.team3_hatch_max_data);
+    TextView team3_auto_max = findViewById(R.id.team3_auto_max_data);
+    TextView team3_tele_max = findViewById(R.id.team3_tele_max_data);
     TextView team3_climb_avg = findViewById(R.id.team3_climb_avg_data);
-    TextView team3_cargo_avg = findViewById(R.id.team3_cargo_avg_data);
-    TextView team3_cargo_max = findViewById(R.id.team3_cargo_max_data);
+    TextView team3_auto_avg = findViewById(R.id.team3_auto_avg_data);
+    TextView team3_tele_avg = findViewById(R.id.team3_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[2].split(";");
+      String[] category = teams[2].split(";");
       team3_title.setText(category[1]);
-      team3_defense_avg.setText(category[21]);
-      team3_cycles_avg.setText(category[5]);
-      team3_cycles_max.setText(category[6]);
-      team3_climb_max.setText(category[16]);
-      team3_hatch_avg.setText(category[12]);
-      team3_hatch_max.setText(category[13]);
-      team3_climb_avg.setText(category[15]);
-      team3_cargo_avg.setText(category[18]);
-      team3_cargo_max.setText(category[19]);
+      team3_defense_avg.setText(category[5]);
+      team3_tarmac_move.setText(category[7]);
+      team3_climb_max.setText(category[9]);
+      team3_auto_max.setText(category[13]);
+      team3_climb_avg.setText(category[10]);
+      team3_tele_max.setText(category[16]);
+      team3_auto_avg.setText(category[12]);
+      team3_tele_avg.setText(category[15]);
     }
   }
 
   private void team4(){
     TextView team4_title = findViewById(R.id.team4_number);
     TextView team4_defense_avg = findViewById(R.id.team4_defense_avg_data);
-    TextView team4_cycles_avg = findViewById(R.id.team4_cycles_avg_data);
-    TextView team4_cycles_max = findViewById(R.id.team4_cycles_max_data);
+    TextView team4_tarmac_move = findViewById(R.id.team4_tarmac_move_data);
     TextView team4_climb_max = findViewById(R.id.team4_climb_max_data);
-    TextView team4_hatch_avg = findViewById(R.id.team4_hatch_avg_data);
-    TextView team4_hatch_max = findViewById(R.id.team4_hatch_max_data);
+    TextView team4_auto_max = findViewById(R.id.team4_auto_max_data);
+    TextView team4_tele_max = findViewById(R.id.team4_tele_max_data);
     TextView team4_climb_avg = findViewById(R.id.team4_climb_avg_data);
-    TextView team4_cargo_avg = findViewById(R.id.team4_cargo_avg_data);
-    TextView team4_cargo_max = findViewById(R.id.team4_cargo_max_data);
+    TextView team4_auto_avg = findViewById(R.id.team4_auto_avg_data);
+    TextView team4_tele_avg = findViewById(R.id.team4_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[3].split(";");
+      String[] category = teams[3].split(";");
       team4_title.setText(category[1]);
-      team4_defense_avg.setText(category[21]);
-      team4_cycles_avg.setText(category[5]);
-      team4_cycles_max.setText(category[6]);
-      team4_climb_max.setText(category[16]);
-      team4_hatch_avg.setText(category[12]);
-      team4_hatch_max.setText(category[13]);
-      team4_climb_avg.setText(category[15]);
-      team4_cargo_avg.setText(category[18]);
-      team4_cargo_max.setText(category[19]);
+      team4_defense_avg.setText(category[5]);
+      team4_tarmac_move.setText(category[7]);
+      team4_climb_max.setText(category[9]);
+      team4_auto_max.setText(category[13]);
+      team4_climb_avg.setText(category[10]);
+      team4_tele_max.setText(category[16]);
+      team4_auto_avg.setText(category[12]);
+      team4_tele_avg.setText(category[15]);
     }
   }
 
   private void team5(){
     TextView team5_title = findViewById(R.id.team5_number);
     TextView team5_defense_avg = findViewById(R.id.team5_defense_avg_data);
-    TextView team5_cycles_avg = findViewById(R.id.team5_cycles_avg_data);
-    TextView team5_cycles_max = findViewById(R.id.team5_cycles_max_data);
+    TextView team5_tarmac_move = findViewById(R.id.team5_tarmac_move_data);
     TextView team5_climb_max = findViewById(R.id.team5_climb_max_data);
-    TextView team5_hatch_avg = findViewById(R.id.team5_hatch_avg_data);
-    TextView team5_hatch_max = findViewById(R.id.team5_hatch_max_data);
+    TextView team5_auto_max = findViewById(R.id.team5_auto_max_data);
+    TextView team5_tele_max = findViewById(R.id.team5_tele_max_data);
     TextView team5_climb_avg = findViewById(R.id.team5_climb_avg_data);
-    TextView team5_cargo_avg = findViewById(R.id.team5_cargo_avg_data);
-    TextView team5_cargo_max = findViewById(R.id.team5_cargo_max_data);
+    TextView team5_auto_avg = findViewById(R.id.team5_auto_avg_data);
+    TextView team5_tele_avg = findViewById(R.id.team5_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[4].split(";");
+      String[] category = teams[4].split(";");
       team5_title.setText(category[1]);
-      team5_defense_avg.setText(category[21]);
-      team5_cycles_avg.setText(category[5]);
-      team5_cycles_max.setText(category[6]);
-      team5_climb_max.setText(category[16]);
-      team5_hatch_avg.setText(category[12]);
-      team5_hatch_max.setText(category[13]);
-      team5_climb_avg.setText(category[15]);
-      team5_cargo_avg.setText(category[18]);
-      team5_cargo_max.setText(category[19]);
+      team5_defense_avg.setText(category[5]);
+      team5_tarmac_move.setText(category[7]);
+      team5_climb_max.setText(category[9]);
+      team5_auto_max.setText(category[13]);
+      team5_climb_avg.setText(category[10]);
+      team5_tele_max.setText(category[16]);
+      team5_auto_avg.setText(category[12]);
+      team5_tele_avg.setText(category[15]);
     }
   }
 
   private void team6(){
     TextView team6_title = findViewById(R.id.team6_number);
     TextView team6_defense_avg = findViewById(R.id.team6_defense_avg_data);
-    TextView team6_cycles_avg = findViewById(R.id.team6_cycles_avg_data);
-    TextView team6_cycles_max = findViewById(R.id.team6_cycles_max_data);
+    TextView team6_tarmac_move = findViewById(R.id.team6_tarmac_move_data);
     TextView team6_climb_max = findViewById(R.id.team6_climb_max_data);
-    TextView team6_hatch_avg = findViewById(R.id.team6_hatch_avg_data);
-    TextView team6_hatch_max = findViewById(R.id.team6_hatch_max_data);
+    TextView team6_auto_max = findViewById(R.id.team6_auto_max_data);
+    TextView team6_tele_max = findViewById(R.id.team6_tele_max_data);
     TextView team6_climb_avg = findViewById(R.id.team6_climb_avg_data);
-    TextView team6_cargo_avg = findViewById(R.id.team6_cargo_avg_data);
-    TextView team6_cargo_max = findViewById(R.id.team6_cargo_max_data);
+    TextView team6_auto_avg = findViewById(R.id.team6_auto_avg_data);
+    TextView team6_tele_avg = findViewById(R.id.team6_tele_avg_data);
 
-    String teams[] = getdata().split(":");
+    String[] teams = getdata().split(":");
     if (qr_string.exists()) {
-      String category[] = teams[5].split(";");
+      String[] category = teams[5].split(";");
       team6_title.setText(category[1]);
-      team6_defense_avg.setText(category[21]);
-      team6_cycles_avg.setText(category[5]);
-      team6_cycles_max.setText(category[6]);
-      team6_climb_max.setText(category[16]);
-      team6_hatch_avg.setText(category[12]);
-      team6_hatch_max.setText(category[13]);
-      team6_climb_avg.setText(category[15]);
-      team6_cargo_avg.setText(category[18]);
-      team6_cargo_max.setText(category[19]);
+      team6_defense_avg.setText(category[5]);
+      team6_tarmac_move.setText(category[7]);
+      team6_climb_max.setText(category[9]);
+      team6_auto_max.setText(category[13]);
+      team6_climb_avg.setText(category[10]);
+      team6_tele_max.setText(category[16]);
+      team6_auto_avg.setText(category[12]);
+      team6_tele_avg.setText(category[15]);
     }
   }
 
@@ -352,10 +318,10 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     ArrayList<ILineDataSet> dataSets = new ArrayList<>();
     for (int z = 0; z < 3; z++) {
       ArrayList<Entry> values = new ArrayList<>();
-      String teams[] = getdata().split(":");
+      String[] teams = getdata().split(":");
       if (qr_string.exists()) {
-        String category[] = teams[z].split(";");
-        String[] graph_data = category[7].split("-");
+        String[] category = teams[z].split(";");
+        String[] graph_data = category[3].split("&");
 
         for (int i = 0; i < graph_data.length; i++) {
           String datapoint = graph_data[i];
@@ -369,7 +335,7 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
         int color = colors[z % colors.length];
         d.setColor(color);
         d.setCircleColor(color);
-        d.setDrawValues(false);
+        d.setDrawValues(true);
         dataSets.add(d);
       }
 
@@ -384,10 +350,10 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
     ArrayList<ILineDataSet> dataSets = new ArrayList<>();
     for (int z = 3; z < 6; z++) {
       ArrayList<Entry> values = new ArrayList<>();
-      String teams[] = getdata().split(":");
+      String[] teams = getdata().split(":");
       if (qr_string.exists()) {
-        String category[] = teams[z].split(";");
-        String[] graph_data = category[7].split("-");
+        String[] category = teams[z].split(";");
+        String[] graph_data = category[3].split("&");
 
         for (int i = 0; i < graph_data.length; i++) {
           String datapoint = graph_data[i];
@@ -401,7 +367,7 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
         int color = colors2[z % colors2.length];
         d.setColor(color);
         d.setCircleColor(color);
-        d.setDrawValues(false);
+        d.setDrawValues(true);
         dataSets.add(d);
       }
 

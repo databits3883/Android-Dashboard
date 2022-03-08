@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Databits Dashboard</string>
-  <string name="climb_avg">Climb Avg</string>
-  <string name="climb_max">Climb Max</string>
+  <string name="climb_avg">Climb time</string>
+  <string name="climb_max">Climb level</string>
   <string name="cargo_max">Cargo Max</string>
-  <string name="Team1">Team1</string>
+  <string name="Team1">Team 1</string>
   <string name="Team2">Team2</string>
   <string name="Team3">Team3</string>
   <string name="Team4">Team4</string>
@@ -15,9 +15,14 @@
   <string name="hatch_max">Hatch Max</string>
   <string name="defense_avg">Defense Avg</string>
   <string name="hatch_avg">Hatch Avg</string>
-  <string name="graph_title">Total Cycles Trend</string>
+  <string name="graph_title">Team Score Trend</string>
   <string name="scan_qr_button">Scan QR Code</string>
   <string name="red">Red</string>
   <string name="blue">Blue</string>
   <string name="zero">0</string>
+  <string name="tarmac_move">Tarmac Move</string>
+  <string name="auto_max">Auto Max</string>
+  <string name="tele_max">Tele Max</string>
+  <string name="auto_avg">Auto Avg</string>
+  <string name="tele_avg">Tele Avg</string>
 </resources>

@@ -7,10 +7,8 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 import com.google.zxing.Result;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -61,8 +59,6 @@ public class Scanner extends Activity implements ZXingScannerView.ResultHandler 
       FileOutputStream stream = new FileOutputStream(qr_string);
       stream.write(results.getBytes());
       stream.close();
-    } catch (FileNotFoundException e) {
-      e.printStackTrace();
     } catch (IOException e) {
       e.printStackTrace();
     }
