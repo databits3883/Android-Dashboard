@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".MainActivity">
-  <TextView
-    android:id="@+id/blue"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:text="@string/blue"
-    android:textSize="24sp"
-    app:layout_constraintBottom_toTopOf="@+id/guideline15"
-    app:layout_constraintEnd_toStartOf="@+id/guideline6"
-    app:layout_constraintHorizontal_bias="0.502"
-    app:layout_constraintStart_toStartOf="@+id/guideline4"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.10"/>
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.10" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.20"/>
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.20" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline3"
@@ -39,27 +29,30 @@
       android:orientation="vertical"
       app:layout_constraintGuide_begin="315dp"
       app:layout_constraintGuide_percent="0.30" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.40"/>
+      android:id="@+id/guideline4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="393dp"
+      app:layout_constraintGuide_percent="0.40" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.50"/>
+      android:id="@+id/guideline5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.50" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline6"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.60"/>
+      android:id="@+id/guideline6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.60" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline7"
@@ -68,174 +61,178 @@
       android:orientation="vertical"
       app:layout_constraintGuide_begin="-98dp"
       app:layout_constraintGuide_percent="0.70" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline8"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.80"/>
+      android:id="@+id/guideline8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.80" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline9"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.90"/>
+      android:id="@+id/guideline9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.90" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline10"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="104dp"
-    app:layout_constraintGuide_percent="0.10"/>
+      android:id="@+id/guideline10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="104dp"
+      app:layout_constraintGuide_percent="0.10" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline11"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.20"/>
+      android:id="@+id/guideline11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.20" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline12"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="216dp"
-    app:layout_constraintGuide_percent="0.30"/>
+      android:id="@+id/guideline12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="216dp"
+      app:layout_constraintGuide_percent="0.30" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline13"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.40"/>
+      android:id="@+id/guideline13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.40" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline14"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.50"/>
+      android:id="@+id/guideline14"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.50" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline15"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.60"/>
+      android:id="@+id/guideline15"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.60" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline16"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.70"/>
+      android:id="@+id/guideline16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.70" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline17"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.80"/>
+      android:id="@+id/guideline17"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.80" />
+
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline18"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="20dp"
-    app:layout_constraintGuide_percent="0.90"/>
+      android:id="@+id/guideline18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintGuide_percent="0.90" />
 
   <TableLayout
       android:id="@+id/team1_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
-      android:layout_marginBottom="16dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_red_light"
-      app:layout_constraintBottom_toTopOf="@+id/guideline13"
-      app:layout_constraintEnd_toStartOf="@+id/guideline3"
+      app:layout_constraintEnd_toStartOf="@+id/chart1"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="1.0">
+      app:layout_constraintTop_toTopOf="parent">
 
-    <View
-        android:id="@+id/team1_top_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
+<!--    <View-->
+<!--        android:id="@+id/team1_top_line"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@android:color/black" />-->
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_defense_avg"
+          android:id="@+id/team1_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team1_number"
+          android:id="@+id/team1_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team1"
-          android:textColor="#6a961f"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team1_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team1_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_defense_avg_data"
+          android:id="@+id/team1_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team1_cycles_avg_data"
+          android:id="@+id/team1_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team1_tarmac_move_data"
+          android:id="@+id/team1_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -249,72 +246,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_climb_max"
+          android:id="@+id/team1_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team1_auto_max"
+          android:id="@+id/team1_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team1_tele_max"
+          android:id="@+id/team1_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_climb_max_data"
+          android:id="@+id/team1_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team1_auto_max_data"
+          android:id="@+id/team1_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team1_tele_max_data"
+          android:id="@+id/team1_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -327,170 +324,170 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_climb_avg"
+          android:id="@+id/team1_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team1_auto_avg"
+          android:id="@+id/team1_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team1_tele_avg"
+          android:id="@+id/team1_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team1_climb_avg_data"
+          android:id="@+id/team1_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team1_auto_avg_data"
+          android:id="@+id/team1_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team1_tele_avg_data"
+          android:id="@+id/team1_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
     </TableRow>
 
-    <View
-        android:id="@+id/team1_bottom_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
+    <!--    <View-->
+    <!--        android:id="@+id/team1_bottom_line"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@android:color/black" />-->
   </TableLayout>
+
   <TableLayout
       android:id="@+id/team2_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_red_light"
-      app:layout_constraintBottom_toTopOf="@+id/guideline16"
-      app:layout_constraintEnd_toStartOf="@+id/guideline3"
+      app:layout_constraintBottom_toTopOf="@+id/team3_table"
+      app:layout_constraintEnd_toStartOf="@+id/chart1"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/guideline13"
-      app:layout_constraintVertical_bias="0.0">
+      app:layout_constraintTop_toBottomOf="@+id/team1_table">
 
     <View
         android:id="@+id/team2_top_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_defense_avg"
+          android:id="@+id/team2_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team2_number"
+          android:id="@+id/team2_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team2"
-          android:textColor="#76aeaf"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team2_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team2_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_defense_avg_data"
+          android:id="@+id/team2_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team2_cycles_avg_data"
+          android:id="@+id/team2_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team2_tarmac_move_data"
+          android:id="@+id/team2_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -504,72 +501,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_climb_max"
+          android:id="@+id/team2_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team2_auto_max"
+          android:id="@+id/team2_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team2_tele_max"
+          android:id="@+id/team2_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_climb_max_data"
+          android:id="@+id/team2_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team2_auto_max_data"
+          android:id="@+id/team2_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team2_tele_max_data"
+          android:id="@+id/team2_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -582,69 +579,73 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_climb_avg"
+          android:id="@+id/team2_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team2_auto_avg"
+          android:id="@+id/team2_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team2_tele_avg"
+          android:id="@+id/team2_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team2_climb_avg_data"
+          android:id="@+id/team2_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team2_auto_avg_data"
+          android:id="@+id/team2_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team2_tele_avg_data"
+          android:id="@+id/team2_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -655,98 +656,93 @@
         android:id="@+id/team2_bottom_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
   </TableLayout>
+
   <TableLayout
       android:id="@+id/team3_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
-      android:layout_marginTop="64dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_red_light"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/guideline3"
+      app:layout_constraintEnd_toStartOf="@+id/chart2"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/guideline15">
+      app:layout_constraintTop_toBottomOf="@+id/team2_table">
 
-    <View
-        android:id="@+id/team3_top_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black"
-        tools:ignore="TooManyViews" />
+    <!--    <View-->
+    <!--        android:id="@+id/team3_top_line"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@android:color/black" />-->
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_defense_avg"
+          android:id="@+id/team3_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team3_number"
+          android:id="@+id/team3_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team3"
-          android:textColor="#CDDC39"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team3_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team3_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_defense_avg_data"
+          android:id="@+id/team3_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team3_cycles_avg_data"
+          android:id="@+id/team3_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team3_tarmac_move_data"
+          android:id="@+id/team3_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -760,72 +756,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_climb_max"
+          android:id="@+id/team3_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team3_auto_max"
+          android:id="@+id/team3_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team3_tele_max"
+          android:id="@+id/team3_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_climb_max_data"
+          android:id="@+id/team3_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team3_auto_max_data"
+          android:id="@+id/team3_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team3_tele_max_data"
+          android:id="@+id/team3_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -838,69 +834,73 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_climb_avg"
+          android:id="@+id/team3_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team3_auto_avg"
+          android:id="@+id/team3_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team3_tele_avg"
+          android:id="@+id/team3_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team3_climb_avg_data"
+          android:id="@+id/team3_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team3_auto_avg_data"
+          android:id="@+id/team3_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team3_tele_avg_data"
+          android:id="@+id/team3_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -911,99 +911,92 @@
         android:id="@+id/team3_bottom_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
   </TableLayout>
 
   <TableLayout
       android:id="@+id/team4_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
-      android:layout_marginBottom="16dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_blue_light"
-      app:layout_constraintBottom_toTopOf="@+id/guideline13"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="@+id/guideline7"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="1.0">
+      app:layout_constraintStart_toEndOf="@+id/chart1"
+      app:layout_constraintTop_toTopOf="parent">
 
-    <View
-        android:id="@+id/team4_top_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
+<!--    <View-->
+<!--        android:id="@+id/team4_top_line"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@android:color/black" />-->
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_defense_avg"
+          android:id="@+id/team4_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team4_number"
+          android:id="@+id/team4_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team4"
-          android:textColor="#6a961f"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team4_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team4_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_defense_avg_data"
+          android:id="@+id/team4_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team4_cycles_avg_data"
+          android:id="@+id/team4_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team4_tarmac_move_data"
+          android:id="@+id/team4_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1017,72 +1010,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_climb_max"
+          android:id="@+id/team4_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team4_auto_max"
+          android:id="@+id/team4_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team4_tele_max"
+          android:id="@+id/team4_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_climb_max_data"
+          android:id="@+id/team4_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team4_auto_max_data"
+          android:id="@+id/team4_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team4_tele_max_data"
+          android:id="@+id/team4_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1095,171 +1088,170 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_climb_avg"
+          android:id="@+id/team4_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team4_auto_avg"
+          android:id="@+id/team4_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team4_tele_avg"
+          android:id="@+id/team4_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team4_climb_avg_data"
+          android:id="@+id/team4_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team4_auto_avg_data"
+          android:id="@+id/team4_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team4_tele_avg_data"
+          android:id="@+id/team4_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
     </TableRow>
 
-    <View
-        android:id="@+id/team4_bottom_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
+    <!--    <View-->
+    <!--        android:id="@+id/team4_bottom_line"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@android:color/black" />-->
   </TableLayout>
 
   <TableLayout
       android:id="@+id/team5_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_blue_light"
-      app:layout_constraintBottom_toTopOf="@+id/guideline16"
+      app:layout_constraintBottom_toTopOf="@+id/team6_table"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="@+id/guideline7"
-      app:layout_constraintTop_toTopOf="@+id/guideline13"
-      app:layout_constraintVertical_bias="0.0">
+      app:layout_constraintStart_toEndOf="@+id/chart1"
+      app:layout_constraintTop_toBottomOf="@+id/team4_table">
 
     <View
         android:id="@+id/team5_top_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_defense_avg"
+          android:id="@+id/team5_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team5_number"
+          android:id="@+id/team5_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team5"
-          android:textColor="#bf8686"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team5_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team5_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_defense_avg_data"
+          android:id="@+id/team5_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team5_cycles_avg_data"
+          android:id="@+id/team5_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team5_tarmac_move_data"
+          android:id="@+id/team5_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1273,72 +1265,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_climb_max"
+          android:id="@+id/team5_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team5_auto_max"
+          android:id="@+id/team5_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team5_tele_max"
+          android:id="@+id/team5_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_climb_max_data"
+          android:id="@+id/team5_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team5_auto_max_data"
+          android:id="@+id/team5_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team5_tele_max_data"
+          android:id="@+id/team5_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1351,69 +1343,73 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_climb_avg"
+          android:id="@+id/team5_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team5_auto_avg"
+          android:id="@+id/team5_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team5_tele_avg"
+          android:id="@+id/team5_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team5_climb_avg_data"
+          android:id="@+id/team5_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team5_auto_avg_data"
+          android:id="@+id/team5_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team5_tele_avg_data"
+          android:id="@+id/team5_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1424,97 +1420,93 @@
         android:id="@+id/team5_bottom_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
   </TableLayout>
+
   <TableLayout
       android:id="@+id/team6_table"
       android:layout_width="0dp"
-      android:layout_height="225dp"
-      android:layout_marginStart="8dp"
-      android:layout_marginTop="64dp"
+      android:layout_height="wrap_content"
       android:background="@android:color/holo_blue_light"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="@+id/guideline7"
-      app:layout_constraintTop_toTopOf="@+id/guideline15">
+      app:layout_constraintStart_toEndOf="@+id/chart2"
+      app:layout_constraintTop_toBottomOf="@+id/team5_table">
 
-    <View
-        android:id="@+id/team6_top_line"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
+    <!--    <View-->
+    <!--        android:id="@+id/team6_top_line"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@android:color/black" />-->
 
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_defense_avg"
+          android:id="@+id/team6_field_1"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/defense_avg"
+          android:text="@string/field_1"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team6_number"
+          android:id="@+id/team6_field_3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:layout_marginEnd="8dp"
-          android:text="@string/Team6"
-          android:textColor="#CDDC39"
-          android:textSize="30sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toStartOf="@+id/guideline3"
-          app:layout_constraintHorizontal_bias="0.501"
-          app:layout_constraintStart_toStartOf="parent"
-          tools:layout_editor_absoluteY="26dp" />
-
-      <TextView
-          android:id="@+id/team6_tarmac_move"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tarmac_move"
+          android:text="@string/field_3"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/team6_field_5"
+          android:layout_marginStart="2dp"
+          android:layout_marginEnd="8dp"
+          android:text="@string/field_5"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_defense_avg_data"
+          android:id="@+id/team6_field_2"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_2"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team6_cycles_avg_data"
+          android:id="@+id/team6_field_4"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_4"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold"
-          android:visibility="invisible" />
+          android:visibility="visible" />
 
       <TextView
-          android:id="@+id/team6_tarmac_move_data"
+          android:id="@+id/team6_field_6"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_6"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1528,72 +1520,72 @@
         android:background="@android:color/black" />
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_climb_max"
+          android:id="@+id/team6_field_7"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_max"
+          android:text="@string/field_7"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team6_auto_max"
+          android:id="@+id/team6_field_9"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_max"
+          android:text="@string/field_9"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team6_tele_max"
+          android:id="@+id/team6_field_11"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_max"
+          android:text="@string/field_11"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_climb_max_data"
+          android:id="@+id/team6_field_8"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_8"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team6_auto_max_data"
+          android:id="@+id/team6_field_10"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_10"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team6_tele_max_data"
+          android:id="@+id/team6_field_12"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_12"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1606,69 +1598,73 @@
         android:layout_height="2dp"
         android:background="@android:color/black" />
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_climb_avg"
+          android:id="@+id/team6_field_13"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/climb_avg"
+          android:text="@string/field_13"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team6_auto_avg"
+          android:id="@+id/team6_field_15"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/auto_avg"
+          android:text="@string/field_15"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
 
       <TextView
-          android:id="@+id/team6_tele_avg"
+          android:id="@+id/team6_field_17"
           android:layout_marginStart="2dp"
           android:layout_marginTop="8dp"
           android:layout_marginEnd="8dp"
-          android:text="@string/tele_avg"
+          android:text="@string/field_17"
           android:textAlignment="center"
           android:textColor="@android:color/black"
-          android:textSize="21sp" />
+          android:textSize="14sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
       <TextView
-          android:id="@+id/team6_climb_avg_data"
+          android:id="@+id/team6_field_14"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team6_auto_avg_data"
+          android:id="@+id/team6_field_16"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_14"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
           android:textStyle="bold" />
 
       <TextView
-          android:id="@+id/team6_tele_avg_data"
+          android:id="@+id/team6_field_18"
           android:layout_marginStart="2dp"
           android:layout_marginEnd="8dp"
           android:layout_marginBottom="8dp"
-          android:text="@string/zero"
+          android:text="@string/field_18"
           android:textAlignment="center"
           android:textColor="@android:color/black"
           android:textSize="21sp"
@@ -1679,111 +1675,70 @@
         android:id="@+id/team6_bottom_line"
         android:layout_width="2dp"
         android:layout_height="2dp"
-        android:background="@android:color/black" />
+        android:background="@android:color/white" />
   </TableLayout>
 
   <com.github.mikephil.charting.charts.LineChart
-    android:id="@+id/chart1"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    app:layout_constraintBottom_toTopOf="@+id/guideline13"
-    app:layout_constraintEnd_toStartOf="@+id/guideline7"
-    app:layout_constraintStart_toStartOf="@+id/guideline3"
-    app:layout_constraintTop_toTopOf="parent"/>
+      android:id="@+id/chart1"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="8dp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline13"
+      app:layout_constraintEnd_toStartOf="@+id/guideline7"
+      app:layout_constraintStart_toStartOf="@+id/guideline3"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <com.github.mikephil.charting.charts.LineChart
-    android:id="@+id/chart2"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/guideline7"
-    app:layout_constraintStart_toStartOf="@+id/guideline3"
-    app:layout_constraintTop_toTopOf="@+id/guideline15"/>
+      android:id="@+id/chart2"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="40dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/guideline7"
+      app:layout_constraintStart_toStartOf="@+id/guideline3"
+      app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
   <TextView
-    android:id="@+id/graph_title"
-    android:textStyle="bold"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:text="@string/graph_title"
-    android:textColor="@android:color/black"
-    android:textSize="30sp"
-    app:layout_constraintBottom_toTopOf="@+id/guideline15"
-    app:layout_constraintEnd_toStartOf="@+id/guideline6"
-    app:layout_constraintStart_toStartOf="@+id/guideline4"
-    app:layout_constraintTop_toTopOf="@+id/guideline13"/>
+      android:id="@+id/graph_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:text="@string/graph_title"
+      android:textColor="@android:color/black"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/guideline15"
+      app:layout_constraintEnd_toStartOf="@+id/guideline6"
+      app:layout_constraintStart_toStartOf="@+id/guideline4"
+      app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
   <Button
-    android:id="@+id/qr_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:text="@string/scan_qr_button"
-    app:layout_constraintBottom_toTopOf="@+id/guideline10"
-    app:layout_constraintEnd_toStartOf="@+id/guideline"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
-  <TextView
-    android:id="@+id/red"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:text="@string/red"
-    android:textSize="24sp"
-    app:layout_constraintEnd_toStartOf="@+id/guideline6"
-    app:layout_constraintStart_toStartOf="@+id/guideline4"
-    app:layout_constraintTop_toTopOf="@+id/guideline13"/>
-  <TextView
-    android:id="@+id/selected_number"
-    android:textStyle="bold"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:textSize="18sp"
-    app:layout_constraintBottom_toTopOf="@+id/guideline15"
-    app:layout_constraintEnd_toStartOf="@+id/guideline7"
-    app:layout_constraintStart_toStartOf="@+id/guideline6"
-    app:layout_constraintTop_toTopOf="@+id/guideline13"/>
+      android:id="@+id/qr_button"
+      android:layout_width="wrap_content"
+      android:layout_height="39dp"
+      android:layout_marginStart="4dp"
+      android:text="@string/scan_qr_button"
+      android:textSize="12sp"
+      app:layout_constraintBottom_toTopOf="@+id/chart2"
+      app:layout_constraintEnd_toStartOf="@+id/team5_table"
+      app:layout_constraintStart_toEndOf="@+id/team2_table" />
 
   <TextView
-      android:id="@+id/red_score"
+      android:id="@+id/selected_number"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="8dp"
-      android:layout_marginEnd="8dp"
-      android:textSize="24sp"
-      app:layout_constraintBaseline_toBaselineOf="@+id/red"
-      app:layout_constraintEnd_toStartOf="@+id/guideline6"
-      app:layout_constraintHorizontal_bias="0.363"
-      app:layout_constraintStart_toEndOf="@+id/red" />
-
-  <TextView
-      android:id="@+id/blue_score"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="8dp"
-      android:layout_marginEnd="8dp"
-      android:textSize="24sp"
-      app:layout_constraintBaseline_toBaselineOf="@+id/blue"
-      app:layout_constraintEnd_toStartOf="@+id/guideline6"
-      app:layout_constraintHorizontal_bias="0.363"
-      app:layout_constraintStart_toEndOf="@+id/blue" />
+      android:layout_marginBottom="8dp"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/graph_title"
+      app:layout_constraintEnd_toStartOf="@+id/team5_table"
+      app:layout_constraintStart_toEndOf="@+id/team2_table" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
