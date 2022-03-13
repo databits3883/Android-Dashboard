@@ -3,8 +3,10 @@ package com.deadman.dashboard;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -53,13 +55,13 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
 
     Button qr_button = findViewById(R.id.qr_button);
     qr_button.setOnClickListener(view -> scanner());
+
+    mkdirs();
   }
 
   @Override
   public void onResume() {
     super.onResume();
-
-
     if (qr_string.exists()) {
       team1();
       team2();
@@ -200,6 +202,27 @@ public class MainActivity extends AppCompatActivity implements OnChartValueSelec
   @Override
   public void onNothingSelected() {
 
+  }
+
+  private void mkdirs() {
+    // Create the FRC folders in case they are missing, complain if teams.csv is missing as well
+    File frc = new File(Environment.getExternalStorageDirectory() + File.separator + "FRC");
+
+    if (!frc.exists()) {
+      frc.mkdirs();
+    }
+
+    rescan(frc.getAbsolutePath());
+  }
+
+  // Function to scan the edited file so it shows up right away in MTP/OTG
+  private void rescan(String file) {
+    MediaScannerConnection.scanFile(this,
+            new String[]{file}, null,
+            (path, uri) -> {
+              Log.i("ExternalStorage", "Scanned " + path + ":");
+              Log.i("ExternalStorage", "-> uri=" + uri);
+            });
   }
 
   private void team1(){
